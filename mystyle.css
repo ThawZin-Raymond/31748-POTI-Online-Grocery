@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    padding: 10px;
+    text-align: center;
+    background: BurlyWood;
+    color: white;
+}
+.header h1 {
+    font-size: 50px;
+}
+
+
+.navi-bar {
+    overflow: hidden;
+    background-color: Orange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navi-bar a{
+    float: left;
+     font-size: 16px;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+}
+.dd {
+    float: left;
+    overflow: hidden;
+}
+.dd .ddbutton {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.navi-bar a:hover, .dd:hover .ddbutton {
+    background-color: LightGrey;
+}
+.dd-content {
+    display: none;
+    position: absolute;
+    background-color: LightGoldenRodYellow;
+    width: 50%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dd:hover .dd-content {
+    display: block;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: LightCyan;
+    height: 250px;
+}
+.column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    
+    display: block;
+    text-align: left;
+}
+.column a:hover {
+    background-color: #ddd;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.column{
+    width: 100%;
+    height: auto;
+}
+.row {
+    flex-direction: column-reverse;
+}
+.wholepage{
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+.mainpage-side {
+    flex: 50%;
+    background-color: Ivory;
+    padding: 20px;
+}
+.right-side {
+    flex: 50%;
+    background-color: FloralWhite;
+    padding: 20px;
+}
+.completed-order{
+    text-align: center;
+    font-size: 50px
+}
+img {
+    display:block;
+    margin: 0 auto;
+}
+input[type=text], select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+  
+}
